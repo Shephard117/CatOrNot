@@ -52,11 +52,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
                 if firstResult.identifier.contains("cat") {
                     self.navigationItem.title = "This is a cat!"
                     self.navigationController?.navigationBar.backgroundColor = .green
-                } else if firstResult.identifier.contains("bread") {
-                    self.navigationItem.title = "This is a bread!"
-                    self.navigationController?.navigationBar.backgroundColor = .green
                 } else {
-                    self.navigationItem.title = "This is'n a cat or bread!"
+                    self.navigationItem.title = "This is'n a cat!"
                     self.navigationController?.navigationBar.backgroundColor = .red
                 }
             }
